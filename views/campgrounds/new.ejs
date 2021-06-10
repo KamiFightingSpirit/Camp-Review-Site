@@ -1,0 +1,58 @@
+<% layout('layouts/boilerplate') %>
+<div class="row">
+    <h1 class="text-center">New Campground</h1>
+    <div class="col-6 offset-3">
+        <form action="/campgrounds" method="POST" novalidate class="validated-form" enctype="multipart/form-data">
+            <!-- TITLE: -->
+            <div class="mb-3">
+                <label class="form-label" for="title">Title</label>
+                <input class="form-control" type="text" id="title" name="campground[title]" required>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please add a title</div>
+            </div>
+            <!-- LOCATION: -->
+            <div class="mb-3">
+                <label class="form-label" for="location">Location</label>
+                <input class="form-control" type="text" id="location" name="campground[location]" required>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please add a location</div>
+            </div>
+            <!-- IMAGE URL: -->
+            <!-- name here ties out to the campground post route where multer looks for image -->
+            <!-- <input type="file" name="image" id="image" multiple> -->
+            <label class="form-label" for="image">Add Images:</label>
+            <div class="input-group">
+                <input multiple type="file" name="image" id="image" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Button</button>
+            </div>
+            <!-- <div class="mb-3">
+                <label class="form-label" for="image">Image URL</label>
+                <input class="form-control" type="text" id="image" name="campground[image]" required>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please add an image</div>
+            </div> -->
+            <!-- PRICE: -->
+            <div class="mb-3">
+                <label class="form-label" for="price">Price</label>
+                <div class="input-group">
+                    <span class="input-group-text" id="price-label">$</span>
+                    <input id="price" type="text" class="form-control" placeholder="0.00" name="campground[price]" required aria-label="Username" aria-describedby="price-label">
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please add a price</div>
+                </div>
+            </div>
+            <!-- DESCRIPTION: -->
+            <div class="mb-3">
+                <label class="form-label" for="description">Description</label>
+                <textarea class="form-control" type="text" id="description" name="campground[description]" required></textarea>
+                <div class="valid-feedback">Looks good!</div> 
+                <div class="invalid-feedback">Please add a description</div>          
+            </div>   
+            <div class="mb-3">
+                <button class="btn btn-success">Add Campground</button>
+            </div>
+        </form>
+        <a href="/campgrounds">Cancel</a>
+    </div>
+</div>
+
