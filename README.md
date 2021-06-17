@@ -3,9 +3,13 @@
  
 
  2. How to Get Up and Running
-  A. Requirements:
+
+    A. Requirements:
+
     a. You will need to register an account with Cloudinary for their API - https://cloudinary.com/
+
     b. You will need a Mapbox account - https://www.mapbox.com/
+    
     c. You will need to have Mongo DB
 
   B. Instructions:
