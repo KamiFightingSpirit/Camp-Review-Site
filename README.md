@@ -2,7 +2,7 @@
  Full Stack Web Dev Project 
  
 
- 2. How to Get Up and Running
+ 1. How to Get Up and Running
 
     A. Requirements:
 
@@ -10,7 +10,7 @@
 
         b. You will need a Mapbox account - https://www.mapbox.com/
 
-        c. You will need to have Mongo DB
+        c. Mongo DB
 
     B. Instructions:
         
